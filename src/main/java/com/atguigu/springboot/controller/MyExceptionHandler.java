@@ -21,6 +21,7 @@ public class MyExceptionHandler {
 //        map.put("message",e.getMessage());
 //        return map;
 //    }
+
     @ExceptionHandler(UserNotExistException.class)
     public String handleException(Exception e, HttpServletRequest request){
         Map<String,Object> map = new HashMap<>();
